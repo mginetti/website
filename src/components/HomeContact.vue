@@ -6,17 +6,17 @@
     <div class="contact--contacts">
       <div class="link">
         <img src="/img/icons/hand-right.png" alt />
-        <a href="#" class="text-primary">Github</a>
+        <a href="#">Github</a>
         <img src="/img/icons/hand-left.png" alt />
       </div>
       <div class="link">
         <img src="/img/icons/hand-right.png" alt />
-        <a href="#" class="text-primary">Linkedin</a>
+        <a href="#">Linkedin</a>
         <img src="/img/icons/hand-left.png" alt />
       </div>
       <div class="link">
         <img src="/img/icons/hand-right.png" alt />
-        <a href="#" class="text-primary">Github</a>
+        <a href="#">Github</a>
         <img src="/img/icons/hand-left.png" alt />
       </div>
     </div>
@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/variables";
 .contact {
   display: flex;
   flex-direction: column;
@@ -52,6 +53,7 @@ export default {
       padding-bottom: 30px;
       a {
         cursor: pointer;
+        color: $black;
         margin-left: 10px;
         margin-right: 10px;
         text-decoration: none;

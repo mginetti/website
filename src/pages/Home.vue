@@ -1,9 +1,9 @@
 <template>
   <div class="website container--main">
     <home-title></home-title>
-    <home-about-me></home-about-me>
-    <home-knowledge></home-knowledge>
-    <home-contact></home-contact>
+    <home-about-me id="about"></home-about-me>
+    <home-knowledge id="knowledge"></home-knowledge>
+    <home-contact id="contact"></home-contact>
   </div>
 </template>
 

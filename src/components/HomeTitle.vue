@@ -26,6 +26,28 @@ export default {
 @import "../assets/variables";
 
 .title {
+  @media only screen and(min-width: 40em) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .title {
+      &--content-title {
+        width: 40%;
+      }
+      &--hi {
+        font-size: 475px;
+      }
+      &--image {
+        width: 40%;
+        padding: 24px;
+        text-align: center;
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
   &--content-title {
     position: relative;
     flex-basis: 50%;

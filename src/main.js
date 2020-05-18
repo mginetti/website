@@ -8,11 +8,21 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     routes: [
         {
-            path: "",
+            path: "/",
             name: "home",
             component: () => import("./pages/Home"),
         },
     ],
+    mode: "history",
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition;
+        }
+        if (to.hash) {
+            return { selector: to.hash };
+        }
+        return { x: 0, y: 0 };
+    },
 });
 Vue.config.productionTip = false;
 
