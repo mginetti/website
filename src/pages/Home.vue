@@ -1,5 +1,5 @@
 <template>
-  <div class="website container--main">
+  <div class="website container">
     <home-title></home-title>
     <home-about-me id="about"></home-about-me>
     <home-knowledge id="knowledge"></home-knowledge>

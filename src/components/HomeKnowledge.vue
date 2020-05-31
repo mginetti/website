@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "HomeKnowledge"
+  name: "HomeKnowledge",
 };
 </script>
 
@@ -31,6 +31,14 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media only screen and (min-width: 40em) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20%;
+  }
+
   &--knowledge,
   &--interests {
     display: flex;
@@ -46,7 +54,8 @@ export default {
     }
     p {
       padding: 15px 25px;
-      font-size: 25px;
+      font-size: 2em;
+      font-weight: 600;
     }
   }
   &--knowledge {
