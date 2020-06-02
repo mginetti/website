@@ -1,7 +1,7 @@
 <template>
   <div class="contact container--main">
     <div class="contact--title">
-      <h2>Contact me</h2>
+      <h2>Contact me:</h2>
     </div>
     <div class="contact--contacts">
       <div class="link">
@@ -35,10 +35,13 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (min-width: 40em) {
+    padding: 25px 20%;
+  }
   &--title {
     padding-bottom: 60px;
     h2 {
-      font-size: 50px;
+      font-size: 3.1rem;
     }
   }
   &--contacts {
@@ -49,7 +52,7 @@ export default {
     .link {
       display: flex;
       align-items: center;
-      font-size: 25px;
+      font-size: 1.5rem;
       padding-bottom: 30px;
       a {
         cursor: pointer;

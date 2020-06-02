@@ -43,7 +43,7 @@ export default {
   &--job,
   &--location,
   &--education {
-    font-size: 40px;
+    font-size: 2.5rem;
     padding-bottom: 60px;
   }
   &--location {
@@ -51,7 +51,7 @@ export default {
   }
   &--education {
     .list {
-      font-size: 25px;
+      font-size: 1.5rem;
       text-align: right;
     }
   }

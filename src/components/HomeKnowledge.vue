@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "HomeKnowledge",
+  name: "HomeKnowledge"
 };
 </script>
 
@@ -32,13 +32,6 @@ export default {
   flex-direction: column;
   justify-content: center;
 
-  @media only screen and (min-width: 40em) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 20%;
-  }
-
   &--knowledge,
   &--interests {
     display: flex;
@@ -46,7 +39,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     .title {
-      font-size: 50px;
+      font-size: 3.1rem;
     }
     .between {
       display: flex;
@@ -67,6 +60,21 @@ export default {
   &--interests {
     .right {
       text-align: right;
+    }
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .knowledge {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+    &--knowledge,
+    &--interests {
+      max-width: 35%;
+      .title {
+        padding-bottom: 15px;
+      }
     }
   }
 }

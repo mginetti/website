@@ -35,11 +35,11 @@ export default {
         width: 40%;
       }
       &--hi {
-        font-size: 475px;
+        font-size: 30rem;
       }
       &--image {
         width: 40%;
-        padding: 24px;
+        padding: 1.5rem;
         text-align: center;
         img {
           height: 100%;
@@ -67,7 +67,7 @@ export default {
     margin: auto;
     width: fit-content;
     span {
-      font-size: 50px;
+      font-size: 2.5rem;
     }
   }
   &--image {
