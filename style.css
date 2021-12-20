@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #D4C321;
+  --secondary: #1C1C1C;
+  --secondary-light: #646464;
+  --white: #F4F4F4;
+
+  --vuejs: #41b883;
+  --sass: #cf649a;
+  --nodejs: #186e00;
+  --js: #f0d91b;
+  --react: #61dafb;
+
+  --section-padding: 3rem;
+}
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background: var(--secondary);
+  color: var(--white);
+  font-family:  sans-serif;
+  font-size: 1.5em;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1.primary {
+  color: var(--primary);
+}
+
+h1.xxl {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h3.vuejs {
+  color: var(--vuejs);
+}
+
+h3.sass {
+  color: var(--sass);
+}
+
+h3.nodejs {
+  color: var(--nodejs);
+}
+
+h3.js {
+  color: var(--js);
+}
+
+h3.react {
+  color: var(--react);
+}
+
+section {
+  min-height: 60vh;
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+section.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section.home > .home__hi, .home__logo {
+  flex: 1;
+}
+
+.home__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__logo > svg {
+  height: 45vh;
+  width: 45vhf;
+}
+
+.home__hi {
+  text-align: center;
+}
+
+@media screen and (min-width: 45em) {
+  section.home {
+    display: flex;
+    flex-direction: row;
+  }
+  .home__logo > svg {
+    height: 35vh;
+    width: 35vhf;
+  }
+  .home__hi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+section.knowledge {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+section.knowledge > h1 {
+  margin-bottom: 1rem;
+}
+
+.knowledge__items {
+  position: relative;
+}
+
+.knowledge__item {
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 45em) {
+  section.knowledge {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .knowledge > div > h1 {
+    margin-bottom: 2rem;
+  }
+  .knowledge__item {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .knowledge__item > h3 {
+    font-size: 2rem;
+  }
+}
+
+section.education, section.experience {
+  text-align: center;
+}
+
+.education__container, .experience__container {
+  position: relative;
+  padding: 2rem;
+}
+
+.education__container::after, .experience__container::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 90%;
+  background: var(--primary);
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.education__item, .experience__item {
+  position: relative;
+  width: 50%;
+  padding: 1.5em 1.2rem;
+}
+
+.education__item > h4, .experience__item > h4 {
+  font-size: 1.3em;
+  margin-bottom: .3rem;
+}
+
+.education__item > h6, .experience__item > h6 {
+  font-size: 1rem;
+  color: var(--secondary-light);
+}
+
+.education__item > p, .experience__item > p {
+  font-size: .8em;
+  color: var(--secondary-light);
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+.education__item--left, .experience__item--left {
+  margin-right: auto;
+  text-align: right;
+}
+
+.education__item--right, .experience__item--right {
+  margin-left: auto;
+  text-align: left;
+}
+
+footer {
+  padding: var(--section-padding);
+  background: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+}
+
+.row > a {
+  text-decoration: none;
+  color: black;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 45em) {
+  footer > h1 {
+    font-size: 2.5rem
+  }
+  footer > div > a > h3 {
+    font-size: 1.5rem
+  }
+}
