@@ -178,6 +178,11 @@ body {
   max-width: 400px;
 }
 
+.avatar-wrapper>img {
+  max-height: 350px;
+  border-radius: 50%;
+}
+
 .avatar-glow {
   position: absolute;
   top: 50%;
